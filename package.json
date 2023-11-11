@@ -5,12 +5,13 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "jekyll serve",
-    "build": "/home/mera/gems/gems/jekyll-4.3.2/lib/jekyll build"
+    "dev": "bundle exec jekyll serve",
+    "predeploy": "set JEKYLL_ENV=production jekyll build",
+    "deploy": "gh-pages -d _site"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Meraviglioso8/My-first-jenkyll-web.git"
+    "url": "git+https://github.com/Meraviglioso8/My-first-jekyll-web.git"
   },
   "keywords": [
     "jekyll"
@@ -18,7 +19,7 @@
   "author": "Meraviglioso8",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Meraviglioso8/My-first-jenkyll-web/issues"
+    "url": "https://github.com/Meraviglioso8/My-first-jekyll-web/issues"
   },
-  "homepage": "https://github.com/Meraviglioso8/My-first-jenkyll-web#readme"
+  "homepage": "https://github.com/Meraviglioso8/My-first-jekyll-web#readme"
 }
