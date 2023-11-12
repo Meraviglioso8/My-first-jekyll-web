@@ -14,7 +14,7 @@ jobs:
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: 'ruby 3.0.2p107' # or the version you're using
+        ruby-version: 'ruby 3.0' # or the version you're using
     - name: Install dependencies
       run: bundle install
     - name: Run RSpec tests
