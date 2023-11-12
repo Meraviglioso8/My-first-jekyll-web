@@ -17,5 +17,6 @@ jobs:
         ruby-version: '3.0' # or the version you're using
     - name: Install dependencies
       run: bundle install
+      
     - name: Run RSpec tests
       run: bundle exec rspec
