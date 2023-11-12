@@ -1,0 +1,25 @@
+{
+  "name": "my-first-jekyll-web",
+  "version": "1.0.0",
+  "description": "my first jekyll web build on github",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bundle exec jekyll serve",
+    "predeploy": "set JEKYLL_ENV=production jekyll build",
+    "deploy": "gh-pages -d _site"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meraviglioso8/My-first-jekyll-web.git"
+  },
+  "keywords": [
+    "jekyll"
+  ],
+  "author": "Meraviglioso8",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Meraviglioso8/My-first-jekyll-web/issues"
+  },
+  "homepage": "https://github.com/Meraviglioso8/My-first-jekyll-web#readme"
+}
