@@ -1,0 +1,21 @@
+name: Ruby Automated Testing
+
+on:
+  pull_request:
+  push:
+    branches: [ main, develop ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.0' # or the version you're using
+    - name: Install dependencies
+      run: bundle install
+    - name: Run RSpec tests
+      run: bundle exec rspec
